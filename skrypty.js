@@ -1,6 +1,11 @@
 const towary = [
     "Towar1", "Towar2", "Towar3"
 ];
+const towaryOb = [
+    {id:0, nazwa: "Towar4"},
+    {id:1, nazwa: "Towar5"},
+    {id:2, nazwa: "Towar6"}
+]
 
 
 
@@ -27,5 +32,15 @@ function select1(){
     towary.forEach(item => {
         let opcja = document.createElement('option');
         opcja.value = opcja.textContent = item;
+        select.appendChild(opcja)
     })
+}
+
+function selectOb(){
+    let select = document.querySelector("#sel1");
+    for(const k of Object.keys(towaryOb)){
+        let opcja = document.createElement('option');
+        opcja.value = opcja.textContent = towaryOb[k].nazwa;
+        select.appendChild(opcja);
+    }
 }
