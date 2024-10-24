@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="skrypty.css"></script>
+    <script src="skrypty.js"></script>
 </head>
 <body>
     <h1>FORUMLARZ</h1>
-    <form action="">
-        
+    <form>
+        <label for="imie">Imię</label>
+        <input type="text" name="imie" id="imie"><br>
+        <label for="l1">Podaj liczbe A</label>
+        <input type="number" name="l1" id="l1"><br>
+        <label for="l2">Podaj liczbe B</label>
+        <input type="number" name="l2" id="l2"><br>
+        <input type="checkbox" name="zgoda" id="zgoda">
+        <label for="zgoda">TAK/NIE</label><br>
+        <fieldset>
+            <legend>
+                RADIO
+            </legend>
+                <input type="radio" name="radio" id="r1" value="10">
+                <label for="r1">10</label><br>
+                <input type="radio" name="radio" id="r2" value="20">
+                <label for="r2">20</label><br>
+                <input type="radio" name="radio" id="r3" value="30">
+                <label for="r1">30</label><br>
+        </fieldset>
+        <button type="button" onclick="funkcja(this.form);">DZIAŁAJ</button>
     </form>
 </body>
 </html>
