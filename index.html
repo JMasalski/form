@@ -28,6 +28,20 @@
                 <input type="radio" name="radio" id="r3" value="30">
                 <label for="r1">30</label><br>
         </fieldset>
+        <select name="sel" id="sel">
+            <optgroup label="G1">
+                <option value="100">100</option>
+                <option value="100">200</option>
+            </optgroup>
+            <optgroup label="G2">
+                <option value="300">300</option>
+                <option value="400">400</option>
+            </optgroup>
+        </select><br>
+        <label for="sel1">Wybierz towar</label>
+        <select name="sel1" id="sel1">
+            <script>select1()</script>
+        </select>
         <button type="button" onclick="funkcja(this.form);">DZIAŁAJ</button>
     </form>
 </body>
